@@ -1,0 +1,4 @@
+﻿Build started...
+1>------ Build started: Project: DD Shoes, Configuration: Debug Any CPU ------
+1>  DD Shoes -> C:\Users\ASUS\source\repos\DD Shoes\DD Shoes\bin\DD Shoes.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

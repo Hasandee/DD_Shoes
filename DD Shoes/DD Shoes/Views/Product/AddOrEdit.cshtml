@@ -1,0 +1,63 @@
+﻿@model DD_Shoes.Models.mvcProductModel
+@{
+    ViewBag.Title = "AddOrEdit";
+}
+
+<div class="form-body" style="background-color:aliceblue;padding:60px;">
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.Product_ID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Product_Name)
+            @Html.EditorFor(model => Model.Product_Name)
+            @Html.ValidationMessageFor(model => Model.Product_Name)
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Product_Price)
+            @Html.EditorFor(model => Model.Product_Price)
+            @Html.ValidationMessageFor(model => Model.Product_Price)
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Product_Quantity)
+            @Html.EditorFor(model => Model.Product_Quantity)
+            @Html.ValidationMessageFor(model => Model.Product_Quantity)
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Product_Category)
+            @Html.EditorFor(model => Model.Product_Category)
+            @Html.ValidationMessageFor(model => Model.Product_Category)
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Product_Description)
+            @Html.EditorFor(model => Model.Product_Description)
+            @Html.ValidationMessageFor(model => Model.Product_Description)
+        </div>
+
+
+        <div class="form-group">
+            @Html.LabelFor(model => Model.Image_URL)
+            @Html.EditorFor(model => Model.Image_URL)
+            @Html.ValidationMessageFor(model => Model.Image_URL)
+        </div>
+
+
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn button" />
+            <input type="reset" value="Reset" class="btn button" />
+        </div>
+    }
+</div>
+
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}
